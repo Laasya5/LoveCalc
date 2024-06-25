@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lc.css">
+    <title>Love Calculator</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">The Love Calculator</div>
+    </nav>
+
+    <section class="wrapper">
+        <h2 class="heading" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: rgba(255, 0, 0, 0.747);">Welcome to this great invention of Doctor Love!</h2>
+        <p class="about" style="color:rgba(255, 255, 255, 0.619)">Welcome to the Love Calculator! This entertaining tool allows you to check the compatibility between you and your special someone. Whether you're curious about a potential romance or just want to have some fun with your friends, our Love Calculator is here to provide a playful match percentage based on your names.
+
+            To find out what the chances for you and your dream partner are, just fill in both full names (both first
+            and last name) in the two text boxes below, and press Calculate.</p>
+
+        <div class="box">
+            <div class="flex-box">
+                <div class="yourName">
+                    <label for="yourName" class="bold" style="margin-bottom: 10px;color:rgba(255, 255, 255, 0.619)">Your Name</label> <br>
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="yourCrush">
+                    <label for="yourCrush" class="bold" style="color:rgba(255, 255, 255, 0.619);">Your Crush</label> <br>
+                    <input type="text" placeholder="Full Name" required>
+                </div> 
+            </div>
+            <button onclick="calculateLove()">Calculate love</button>
+            <div id="lovePercentage">
+
+            </div>
+        </div>
+    </section>
+    
+<script src="lc.js"></script>
+   
+</body>
+
+</html>
